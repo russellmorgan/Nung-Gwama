@@ -13,7 +13,7 @@ function Start(){
 
 	N("<b>The Terrible Nung Gwama</b>");
 	N("A Chinese Folktale");
-	N("Adapted by John Battle & Russell Morgan");
+	N("Adapted to interactive fiction by Russell Morgan");
 	N("Ready to begin?");
 
 	Choose({
