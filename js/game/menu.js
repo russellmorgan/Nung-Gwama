@@ -4,41 +4,46 @@ function Start(){
 	
 	/////// SET UP SCENE ////////
 
-	Show("background","intro");
+	//Show("background","intro");
 	//Show("nicky","coffee_nicky_still");
 
 	PlaySound("bg","coffeehouse",{loop:-1, volume:0.7});
 
 	//////////////////////////////
-
-	N("<b>The Terrible Nung Gwama</b>");
-	N("A Chinese Folktale");
-	N("Adapted to interactive fiction by Russell Morgan");
-	N("Ready to begin?");
+	N("Once, long ago in China, a poor young woman decided to honor her parents by taking them some rice cakes.");
+	N("The path to their home went by a very dark grove of bamboo trees.");
+    N("People said a monster called the Terrible Nung Gwama lived there.");
+    N("They said the monster ate animals of all kinds and also ate people.");
+    N("They said it was a bone cruncher.");
+    N("It crunched and chewed up everything, hair bones and all.")
 
 	Choose({
-		"Play the story": Play,
-        "How does it work?": function(){
-            About("Hm, tell me more.");
-        },
-		"Credits": function(){
-			Credits("Who are you?");
+		"Walk to parents": startStory,
+		"Change your mind and stay home": function(){
+			changeMind();
 		}
 	});
 
 }
 
-function SipCoffee(message){
-	Show("nicky","coffee_nicky_drink");
-	Show("cup",null);
-	PlaySound("sfx","coffee_sip");
-	p(message);
-	Show("nicky","coffee_nicky_still");
-	Show("cup","cup_steam");
+function startStory() {
+    A("It was a long way from her house to theirs, so she went as fast as she could on her tiny feet.")
+    fadeScene();
+    queue(ClearDialogue,0);
+    Clear();
+    meetGwama();
+};
+
+function changeMind() {
+    alert("ha, you are scared!");
+};
+
+function fadeScene() {
+    //TODO: Figure out a native way to fade, or get a library that will work with this code....
+    return;
 }
 
 function Play(message){
-	
 	//SipCoffee(message);
 
 	// Asked neither
@@ -193,6 +198,7 @@ function Play_3(){
 
 }
 
+//TODO: move this to end of game or a global icon with overlay?
 function Credits(message){
 
 	$.asked_credits = true;
@@ -234,43 +240,6 @@ function Credits(message){
 			"Errr ok let's play then?": Play,
 			"Oh god why do you do this to us?": function(){
 				About("Good god man, why did you bother?");
-			}
-		});
-	}
-
-}
-
-function About(message){
-
-	$.asked_about = true;
-
-	SipCoffee(message);
-
-	if($.asked_credits){
-		N("Because I like the pain of coding I guess");
-	}else{
-		N("I like making things, can't help it");
-	}
-	
-	p("Sigh, that's not an explanation.");
-	N("No it's not. But you're being kind of nosy about it Jake. Forget it, it's Chinatown...");
-
-	if($.asked_credits){
-		p("Explain More!.");
-		N("Look, details are for accountants, you write I code");
-		p("Then we go back to killing ourselves with alcohol?");
-        N("Exactly...");
-	}
-
-	if($.asked_credits){
-		Choose({
-			"Ok, ok, Show me the game already.": Play
-		});
-	}else{
-		Choose({
-			"Can we play now?": Play,
-			"(Credits already)": function(){
-				Credits("WTF?");
 			}
 		});
 	}

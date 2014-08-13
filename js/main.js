@@ -16,3 +16,8 @@ window.onload = function(){
 	});
 
 };
+
+//prevent scroll
+document.ontouchstart = function(e){
+    //e.preventDefault();
+}

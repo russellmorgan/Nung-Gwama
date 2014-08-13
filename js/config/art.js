@@ -2,7 +2,7 @@
 
 Background("intro","img/backgrounds/bg-intro.jpg");
 
-////////// COFFEE /////////////
+////////// hmmmm /////////////
 
 Background("coffeehouse","img/backgrounds/coffeehouse.png");
 Background("coffeehouse_2","img/backgrounds/coffeehouse_2.png");

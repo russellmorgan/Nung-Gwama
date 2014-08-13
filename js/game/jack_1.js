@@ -7,7 +7,7 @@
 // OKAY, TOO CONVOLUTED, CUT OUT THE DIFFERENT FAMILIES & TYPO parts.
 
 function Start_Jack_1(){
-	
+
 	/////// SET UP SCENE ////////
 
 	Show("background","bedroom");
