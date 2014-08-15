@@ -233,7 +233,6 @@ body {
   text-align: right;
   float: right;
   margin-right: 20px;
-  font-style: italic;
 }
 #game #dialogue > div.gwama {
   text-align: right;
@@ -248,4 +247,11 @@ body {
 #game[screen=loading] > #loading,
 #game[screen=credits] > #credits {
   display: block;
+}
+.splash {
+  text-align: center;
+  padding: 6%;
+}
+.splash h1 {
+  text-align: center;
 }
