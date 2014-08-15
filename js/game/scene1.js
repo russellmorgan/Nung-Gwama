@@ -41,7 +41,7 @@ var hideGwama = function() {
 };
 
 var runGwama = function() {
-    N("With all her strength the woman turned away from the monster and run as fast as she could");
+    N("With all her strength the woman turned away from the monster and ran as fast as she could");
     N("Nung Gwama roared again and chased after her");
     g("Aargh! I will eat you whole!");
     N("And with that the monster caught up with the woman, for he was very big and very strong.");

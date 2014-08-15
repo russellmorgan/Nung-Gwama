@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="884223b7-a375-41f4-ada9-aa43b8551927" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/core/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/game/scene2.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/game/meet_gwama.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/config/characters.js" afterPath="$PROJECT_DIR$/js/config/characters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/game.css" afterPath="$PROJECT_DIR$/css/game.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/game.less" afterPath="$PROJECT_DIR$/css/game.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/menu.js" afterPath="$PROJECT_DIR$/js/game/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/core/app.js" afterPath="$PROJECT_DIR$/js/core/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/game/scene1.js" afterPath="$PROJECT_DIR$/js/game/scene1.js" />
     </list>
     <ignored path="Nung Gwama.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,51 +36,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scene1.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="scene1.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/game/scene1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-              <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.86488813" vertical-offset="0" max-vertical-offset="1162">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jack_1.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/game/jack_1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4725">
-              <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scene2.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/game/scene2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/game/menu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
-              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/core/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.116179004" vertical-offset="0" max-vertical-offset="1162">
-              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -129,10 +91,10 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/game.less" />
         <option value="$PROJECT_DIR$/js/config/characters.js" />
-        <option value="$PROJECT_DIR$/js/core/app.js" />
         <option value="$PROJECT_DIR$/js/game/menu.js" />
         <option value="$PROJECT_DIR$/game.html" />
         <option value="$PROJECT_DIR$/js/game/scene2.js" />
+        <option value="$PROJECT_DIR$/js/core/app.js" />
         <option value="$PROJECT_DIR$/js/game/scene1.js" />
       </list>
     </option>
@@ -584,14 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/game/scene1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/game/scene2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
@@ -602,8 +556,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/core/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.116179004" vertical-offset="0" max-vertical-offset="1162">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/game/scene1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86488813" vertical-offset="0" max-vertical-offset="1162">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
