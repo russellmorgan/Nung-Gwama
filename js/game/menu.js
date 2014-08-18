@@ -29,7 +29,6 @@ function Start(){
 function startStory() {
     A("It was a long way from her house to theirs, so she went as fast as she could on her tiny feet.")
     fadeScene();
-    queue(ClearDialogue,0);
     Clear();
     meetGwama();
 };
