@@ -10,11 +10,8 @@ w = new Character({ align:"left", background:"#79B8FE", sound:"text_mid" });
 // Gwama
 g = new Character({ align:"right", background:"#333", color:"#bbb", sound:"text_low" });
 
-//needle pedlar
-np = new Character({ align:"right", background:"#999", color:"#fff", sound:"text_low" });
-
-
-
+//pedlars
+p = new Character({ align:"right", background:"#F1E1C6", color:"#000", sound:"text_low" });
 
 // The player in the main menu & outro
-p = new Character({ align:"right", background:"#333", color:"#bbb", sound:"text_low" });
+//p = new Character({ align:"right", background:"#333", color:"#bbb", sound:"text_low" });

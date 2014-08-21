@@ -43,12 +43,29 @@ var pedlarArrives = function() {
     N("While the woman was talking, a pedlar stopped to ask why the poor woman was weeping.");
     N("The villagers told him about the Nung Gwama's threat.");
     N("The pedlar set down the bamboo baskets which hung from his carrying pole.");
-    np("Here, I'll give you these sharp needles.");
-    np("Stick them in the door of your house, near the latch.");
-    np("Maybe the Nung Gwama will prick himself when he tries to open the door.");
+    p("Here, I'll give you these sharp needles.");
+    p("Stick them in the door of your house, near the latch.");
+    p("Maybe the Nung Gwama will prick himself when he tries to open the door.");
+
+    Choose({
+        "Take the needles":takeNeedles,
+        "Refuse the needles":refuseNeedles
+    });
+};
+
+var takeNeedles = function() {
+    N("The woman accepted the gift.");
     N("And the pedlar picked up his baskets and the pole and went off again.");
-    //TODO: Need a general pause function here
     N("The woman, still frightened, continued to cry.");
     N("For how could a few needles save her from the Nung Gwama?");
 
+    fadeScene();
+    Clear();
+    meetManurePedlar();
+}
+
+var refuseNeedles = function() {
+    N("The woman could not think of how the needles would ever stop something as terrible as the Nung Gwama and refused the gift.");
+    N("And the pedlar picked up his baskets and the pole and went off again.");
+    gameFail();
 };

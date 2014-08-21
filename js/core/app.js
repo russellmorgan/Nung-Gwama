@@ -1,5 +1,11 @@
 //Functions that game needs in general
 
+//tracks items you'll need to kill Gwama and win the game
+var requiredItems = {
+    needles:false,
+    manure:false
+};
+
 //You died somehow, nice job...
 var gameFail = function() {
     fadeScene();
