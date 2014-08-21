@@ -14,13 +14,21 @@ var meetVillagers = function() {
 };
 
 var speakVillager1= function() {
-    //villager 1dialog
-    N("Villager 1 dialog");
+    //villager 1 dialog
+    w("The terrible Nung Gwama is coming tonight to tear me to pieces and crunch me up and eat me.");
+    N("The villager looked at his wife and nodded his head");
+    N("It was true, he said, she might as well prepare to die: The Nung Gwama always came when he said he would.");
+
+    Choose({
+        "Speak to second villager": speakVillager2,
+        "Stay quiet": noSpeakVillager
+    });
+
 };
 
 var speakVillager2 = function() {
-    //villager 2 dialog
-        N("Villager 2 dialog");
+     N("Villager 2 dialog");
+     pedlarArrives();
 };
 
 var noSpeakVillager = function() {
@@ -29,4 +37,18 @@ var noSpeakVillager = function() {
     N("Had they known perhaps the could have helped.");
     N("The woman eventually walked home and waited for nightfall and the terrible Nung Gwama ");
     gwammaEatsYou();
+};
+
+var pedlarArrives = function() {
+    N("While the woman was talking, a pedlar stopped to ask why the poor woman was weeping.");
+    N("The villagers told him about the Nung Gwama's threat.");
+    N("The pedlar set down the bamboo baskets which hung from his carrying pole.");
+    np("Here, I'll give you these sharp needles.");
+    np("Stick them in the door of your house, near the latch.");
+    np("Maybe the Nung Gwama will prick himself when he tries to open the door.");
+    N("And the pedlar picked up his baskets and the pole and went off again.");
+    //TODO: Need a general pause function here
+    N("The woman, still frightened, continued to cry.");
+    N("For how could a few needles save her from the Nung Gwama?");
+
 };
