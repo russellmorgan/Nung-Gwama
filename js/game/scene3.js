@@ -2,7 +2,8 @@
 
 var meetManurePedlar = function() {
     N("Her wails attracted a man who collected manure, which he used to fertilize his fields.");
-    N("He asked her what was the matter. When she told him, he thought for awhile and then said");
+    N("He asked her what was the matter.");
+    N("When she told him, he thought for awhile and then said");
     p("Look, here is a little manure. Spread it on your door.");
     p("Perhaps the Nung Gwama will dirty his hands with it, and go away.");
 
@@ -16,6 +17,7 @@ var takeManure = function() {
     N("The woman accepted his gift, but she cried as loudly as ever, for she thought it would be of little help against the terrible Nung Gwama.");
     fadeScene();
     Clear();
+    meetSnakePedlar();
 };
 
 var refuseManure = function() {

@@ -17,7 +17,58 @@ window.onload = function(){
 
 };
 
-//prevent scroll
-document.ontouchstart = function(e){
-    //e.preventDefault();
-}
+//restart the game because you died. Don't die.
+var restartGame = function() {
+    fadeScene();
+    Clear();
+    Start();
+};
+
+//you totes won! congrats!
+var wonGame = function() {
+    N("Thank you for playing.");
+    N("The end.");
+
+    Choose({
+        "See the Credits":showCredits,
+        "Share this experience":socialShare
+    })
+};
+
+var showCredits = function() {
+    fadeScene();
+    Clear();
+    N("Credits here...")
+};
+
+var socialShare = function() {
+    fadeScene();
+    Clear();
+    N("add social media sharing functionality...")
+};
+
+//tracks items you'll need to kill Gwama and win the game
+var requiredItems = {
+    needles:false,
+    manure:false
+};
+
+//You died somehow, nice job...
+var gameFail = function() {
+    fadeScene();
+    Clear();
+    Choose({
+        "Try Again":restartGame
+    })
+    //TODO: load a 'you are dead' screen & animation
+};
+
+//Nung Gwama came to eat you
+var gwammaEatsYou = function() {
+    N("The Nung Gwama arrived that evening and ate he woman up in the most disgusting way.");
+    gameFail();
+};
+
+var fadeScene = function() {
+    //TODO: Figure out how to fade out the container with just pure css/js
+};

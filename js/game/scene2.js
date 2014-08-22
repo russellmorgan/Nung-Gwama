@@ -43,6 +43,7 @@ var pedlarArrives = function() {
     N("While the woman was talking, a pedlar stopped to ask why the poor woman was weeping.");
     N("The villagers told him about the Nung Gwama's threat.");
     N("The pedlar set down the bamboo baskets which hung from his carrying pole.");
+    N("The thought for a moment.");
     p("Here, I'll give you these sharp needles.");
     p("Stick them in the door of your house, near the latch.");
     p("Maybe the Nung Gwama will prick himself when he tries to open the door.");

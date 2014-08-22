@@ -19,9 +19,8 @@ function Start(){
 
 	Choose({
 		"Walk to parents": startStory,
-		"Change your mind and stay home": function(){
-			changeMind();
-		}
+		"Stay home": gameFail,
+        "Skip to the end":stayStill
 	});
 
 }
@@ -32,12 +31,6 @@ function startStory() {
     Clear();
     meetGwama();
 };
-
-function changeMind() {
-    alert("ha, you are scared!");
-    document.location = document.location;
-};
-
 
 
 //TODO: move this to end of game or a global icon with overlay?
