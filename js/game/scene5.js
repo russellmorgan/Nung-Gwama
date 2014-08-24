@@ -23,10 +23,14 @@ var refuseFish = function() {
     N("The woman could not see how two small fish would save her from the Nung Gwama.");
     w("Thank you for your kindness but please keep your fish");
     N("The fish monger wished her luck and continued on his way.");
+    fadeScene();
+    Clear();
+    meetEggSeller();
 
 };
 
 var takeFish = function() {
+    requiredItems.fish = 1;
     N("The woman thought that was very unlikely, but she took the fish and the cooking pot and thanked him.");
     N("She went on sobbing loudly.");
     fadeScene();

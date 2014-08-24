@@ -76,6 +76,7 @@ function Character(character){
 function Choose(choices){
 	queue(function(){
 		publish("choose", [choices]);
+        document.getElementById("choices").className = "active";
 		resetTimer();
 	});
 };

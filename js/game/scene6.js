@@ -28,6 +28,7 @@ var refuseEggs = function() {
 };
 
 var takeEggs = function() {
+    requiredItems.eggs = 1;
     N("The woman did not think it would be so easy to scare the terrible Nung Gwama, but she thanked him and took the eggs.");
     N("She then cried louder than ever.");
     fadeScene();

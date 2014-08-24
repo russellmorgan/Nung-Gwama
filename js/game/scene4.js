@@ -19,10 +19,13 @@ var meetSnakePedlar = function() {
 var refuseSnakes = function() {
     N("The woman was quite afraid of the snakes and refused.");
     N("She thanked him for his kindness and the pedlar went on his way.");
+    fadeScene();
+    Clear();
     meetFishPedlar();
 };
 
 var takeSnakes = function() {
+   requiredItems.snakes = 1;
    N("The woman thanked him for his kindness, but soon she was weeping again &mdash; for what could mere snakes do against the terrible Nung Gwama?");
     fadeScene();
     Clear();

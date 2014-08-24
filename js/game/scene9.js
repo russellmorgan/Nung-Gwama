@@ -9,6 +9,10 @@ var stayStill = function() {
     Clear();
     N("The woman could not move, she was so frightened.");
     N("The Nung Gwama rushed at the door and tore it down.");
+
+    if(requiredItems.needles == 1) {
+       //TODO: break apart the needles and manure statement
+    }
     N("But as he did, the needles stuck in his hands and the manure dirtied them.");
     g("Oh!");
     g("Ow!");

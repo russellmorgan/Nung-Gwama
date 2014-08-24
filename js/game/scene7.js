@@ -26,6 +26,7 @@ var refuseStone = function() {
 };
 
 var takeStone = function() {
+    requiredItems.stone = 1;
     N("The woman took the millstone with gratitude and the seller went on his way.");
     fadeScene();
     Clear();

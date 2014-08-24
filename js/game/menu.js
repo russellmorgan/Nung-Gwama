@@ -7,7 +7,7 @@ function Start(){
 	//Show("background","intro");
 	//Show("nicky","coffee_nicky_still");
 
-	PlaySound("bg","coffeehouse",{loop:-1, volume:0.7});
+	//PlaySound("bg","coffeehouse",{loop:-1, volume:0.7});
 
 	//////////////////////////////
 	N("Once, long ago in China, a poor young woman decided to honor her parents by taking them some rice cakes.");
@@ -20,7 +20,7 @@ function Start(){
 	Choose({
 		"Walk to parents": startStory,
 		"Stay home": gameFail,
-        "Skip to the end":stayStill
+        "*dev use: skip to the end":stayStill
 	});
 
 }
@@ -33,10 +33,3 @@ function startStory() {
 };
 
 
-//TODO: move this to end of game or a global icon with overlay?
-function Credits(message){
-
-	$.asked_credits = true;
-
-
-}

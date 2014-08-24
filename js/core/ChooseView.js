@@ -51,7 +51,8 @@ subscribe("choose", function(choices){
 		button.innerHTML = label;
 		button.onclick = (function(callback,message){
 			return function(){
-				choicesDOM.innerHTML = "";
+                choicesDOM.innerHTML = "";
+                document.getElementById("choices").className = "";
 				callback(message);
 			};
 		})(choices[label], label);

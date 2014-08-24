@@ -4,9 +4,9 @@
 
 var goBackHome = function() {
     N("By this time it was so late that the woman had to give up the idea of visiting her parents.");
-    N("So she sold the cakes, and with the money she paid a porter to carry all her gifts back to her own house.");
+    N("So she sold the cakes, and with the money she paid a porter to carry her gifts back to her own house.");
     N("Penniless, hungry and frightened, the poor woman felt sure her end was near.");
-    N("Nevertheless she set out al the presents exactly as she had been told to do.");
+    N("Nevertheless she set out the presents exactly as she had been told to do.");
     //NOTE: fade screen to dark night?
     N("By the time she had prepared everything it was very dark");
     N("She went to bed and lay there, shivering and shaking with fear.");

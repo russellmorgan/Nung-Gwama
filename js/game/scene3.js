@@ -21,8 +21,10 @@ var takeManure = function() {
 };
 
 var refuseManure = function() {
+   requiredItems.manure = 1;
    N("The smell of the manure was too much for the woman and she refused his gift.");
    N("And so the man shrugged and continued on his way");
-    //TODO: keep count of items the woman has successfully taken
-    gwammaEatsYou();
+    fadeScene();
+    Clear();
+    meetSnakePedlar();
 };

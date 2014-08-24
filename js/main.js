@@ -15,6 +15,8 @@ window.onload = function(){
 		},1500);
 	});
 
+    var playerChoices = document.getElementById("choices");
+
 };
 
 //restart the game because you died. Don't die.
@@ -48,10 +50,7 @@ var socialShare = function() {
 };
 
 //tracks items you'll need to kill Gwama and win the game
-var requiredItems = {
-    needles:false,
-    manure:false
-};
+var requiredItems = {};
 
 //You died somehow, nice job...
 var gameFail = function() {
@@ -70,5 +69,6 @@ var gwammaEatsYou = function() {
 };
 
 var fadeScene = function() {
+
     //TODO: Figure out how to fade out the container with just pure css/js
 };

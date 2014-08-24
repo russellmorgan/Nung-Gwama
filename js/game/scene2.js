@@ -27,7 +27,7 @@ var speakVillager1= function() {
 };
 
 var speakVillager2 = function() {
-     N("Villager 2 dialog");
+     N("Another villager agreed that she would certainly be eaten by the Nung Gwama.");
      pedlarArrives();
 };
 
@@ -55,6 +55,8 @@ var pedlarArrives = function() {
 };
 
 var takeNeedles = function() {
+    //record inventory
+    requiredItems.needles = 1;
     N("The woman accepted the gift.");
     N("And the pedlar picked up his baskets and the pole and went off again.");
     N("The woman, still frightened, continued to cry.");
@@ -68,5 +70,7 @@ var takeNeedles = function() {
 var refuseNeedles = function() {
     N("The woman could not think of how the needles would ever stop something as terrible as the Nung Gwama and refused the gift.");
     N("And the pedlar picked up his baskets and the pole and went off again.");
-    gameFail();
+    fadeScene();
+    Clear();
+    meetManurePedlar();
 };
