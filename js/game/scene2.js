@@ -15,7 +15,7 @@ var meetVillagers = function() {
 
 var speakVillager1= function() {
     //villager 1 dialog
-    w("The terrible Nung Gwama is coming tonight to tear me to pieces and crunch me up and eat me.");
+    w("&#8220;The terrible Nung Gwama is coming tonight to tear me to pieces and crunch me up and eat me.&#8221;");
     N("The villager looked at his wife and nodded his head");
     N("It was true, he said, she might as well prepare to die: The Nung Gwama always came when he said he would.");
 
@@ -35,7 +35,7 @@ var noSpeakVillager = function() {
     N("She was so frightened and resigned to her fate that should could not say a word.");
     N("So the villagers continued on their way, unaware of what was in store for the poor woman.");
     N("Had they known perhaps the could have helped.");
-    N("The woman eventually walked home and waited for nightfall and the terrible Nung Gwama ");
+    N("The woman eventually walked home and waited for nightfall and the terrible Nung Gwama.");
     gwammaEatsYou();
 };
 
@@ -44,9 +44,9 @@ var pedlarArrives = function() {
     N("The villagers told him about the Nung Gwama's threat.");
     N("The pedlar set down the bamboo baskets which hung from his carrying pole.");
     N("The thought for a moment.");
-    p("Here, I'll give you these sharp needles.");
-    p("Stick them in the door of your house, near the latch.");
-    p("Maybe the Nung Gwama will prick himself when he tries to open the door.");
+    p("&#8220;Here, I'll give you these sharp needles.&#8221;");
+    p("&#8220;Stick them in the door of your house, near the latch.&#8221;");
+    p("&#8220;Maybe the Nung Gwama will prick himself when he tries to open the door.&#8221;");
 
     Choose({
         "Take the needles":takeNeedles,

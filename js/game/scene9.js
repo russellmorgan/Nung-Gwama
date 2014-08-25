@@ -14,30 +14,30 @@ var stayStill = function() {
        //TODO: break apart the needles and manure statement
     }
     N("But as he did, the needles stuck in his hands and the manure dirtied them.");
-    g("Oh!");
-    g("Ow!");
+    g("&#8220;Oh!&#8221;");
+    g("&#8220;Ow!&#8221;");
     N("The monster shrieked at the top of his lungs.");
-    g("What's this? Something has stung me!");
-    g("And what is this dirt?");
-    g("And this terrible smell?");
+    g("&#8220;What's this? Something has stung me!&#8221;");
+    g("&#8220;And what is this dirt?&#8221;");
+    g("&#8220;And this terrible smell?&#8221;");
     N("The Nung Gwama looked at his hands in disgust.");
-    g("Well, now that I'm in, I'll soon finish you off.");
-    g("But first I'll wash my hands in this water.");
+    g("&#8220;Well, now that I'm in, I'll soon finish you off.&#8221;");
+    g("&#8220;But first I'll wash my hands in this water.&#8221;");
     //pause here....
     Clear();
-    g("Yee-ow! What now?");
-    N("Nung Gwama howled, for the snakes had just bitten him with their poisoned fangs");
-    g("But here's a cooking pot. There will be nice warm water in that to take away this pain.");
+    g("&#8220;Yee-ow! What now?&#8221;");
+    N("Nung Gwama howled, for the snakes had just bitten him with their poisoned fangs.");
+    g("&#8220;But here's a cooking pot. There will be nice warm water in that to take away this pain.&#8221;");
     N("As he put his hands in the pot he screamed.");
-    g("Ooh-ouch!");
-    N("The fish had bitten his fingers");
-    g("My fingers are bleeding!");
+    g("&#8220;Ooh-ouch!&#8221;");
+    N("The fish had bitten his fingers.");
+    g("&#8220;My fingers are bleeding!&#8221;");
     N("He hurried to the hearth to stop the bleeding with some ashes.");
     N("The eggs popped in his face, and the hot bits of shell flew into his eyes.");
-    g("Oh, help!");
-    g("I'm bleeding! I can't see!");
-    g("Just let me get my claws on that woman. I'll certainly crunch her up for this!");
-    g("Where are you woman?");
+    g("&#8220;Oh, help!&#8221;");
+    g("&#8220;I'm bleeding! I can't see!&#8221;");
+    g("&#8220;Just let me get my claws on that woman. I'll certainly crunch her up for this!&#8221;");
+    g("&#8220;Where are you woman?&#8221;");
 
     Choose({
         "Call to Nung Gwama":callGwama,
@@ -46,7 +46,7 @@ var stayStill = function() {
 };
 
 var callGwama = function() {
-    w("Over here");
+    w("&#8220;Over here.&#8221;");
     N("The Nung Gwama, who still could not see, shuffled towards the bed.");
     g("flip");
     g("flop");
@@ -62,11 +62,11 @@ var callGwama = function() {
 
 var staySilent = function() {
     N("The woman was too frightened to speak or move.");
-    g("Never mind, I will find you anyway");
+    g("&#8220;Never mind, I will find you anyway.&#8221;");
     N("The monster began to search the small home.");
     g("flip");
     g("flop");
-    g("Ah, there you are, hiding in your bed!");
+    g("&#8220;Ah, there you are, hiding in your bed!&#8221;");
     A("The Nung Gwama has killed you.");
     fadeScene();
     Clear();
@@ -97,8 +97,8 @@ var hitGwama = function() {
 var leaveGwama = function() {
     N("The woman ran from her house, too frightened to see if she had really killed Nung Gwama.");
     N("Many hours later the monster lifted the stone and stood back up.");
-    g("I will find that treacherous woman, no matter how long it takes");
-    N("And with that he followed her trail");
+    g("&#8220;I will find that treacherous woman, no matter how long it takes.&#8221;");
+    N("And with that he followed her trail.");
     g("flip");
     g("flop");
     g("flip");

@@ -18,8 +18,7 @@ var goBackHome = function() {
 var stillWaiting = function() {
     N("But nothing happened.");
     N("The old watchman went by, calling out the first and second watches of the night");
-    watch("A warning to all robbers...");
-    watch("A warning to all robbers...");
+    watch("&#8220;A warning to all robbers...&#8221;");
     N("He tapped his drum and called for the third watch to begin");
 
     Choose({
@@ -30,11 +29,11 @@ var stillWaiting = function() {
 
 var speakWatchman = function() {
     N("The woman ventured out to her front door and saw the watchman");
-    w("Have you seen a terrible monster on your watch tonight?");
+    w("&#8220;Have you seen a terrible monster on your watch tonight?&#8221;");
     N("The watchman replied that all had been quiet on the first two watches");
     N("Sensing her concern the watchman told her")
-    watch("It is true that the Nung Gwama always does what he says.");
-    watch("But we will watch over you tonight.");
+    watch("&#8220;It is true that the Nung Gwama always does what he says.&#8221;");
+    watch("&#8220;But we will watch over you tonight.&#8221;");
     N("The woman did not feel much better but thanked the watchman and returned to bed.");
     fadeScene();
     Clear();
@@ -54,10 +53,10 @@ var waitGwama = function() {
 };
 
 var confrontGwama = function() {
-    g("Aargh! Aargh!");
+    g("&#8220;Aargh! Aargh!&#8221;");
     N("The Nung Gwama roared with all his might.");
-    g("Open up the door!");
-    g("I have come to tear you and crunch you and eat you all up.");
+    g("&#8220;Open up the door!&#8221;");
+    g("&#8220;I have come to tear you and crunch you and eat you all up.&#8221;");
 
     Choose({
         "Stay in bed in fear":stayStill,
@@ -67,7 +66,7 @@ var confrontGwama = function() {
 
 var openDoor = function() {
     N("The woman did as the Nung Gwama asked.");
-    g("Aargh!");
+    g("&#8220;Aargh!&#8221;");
     N("The Terrible monster reached for the woman and tore at her with all his might.");
     A("The Nung Gwama has killed you.");
     fadeScene();

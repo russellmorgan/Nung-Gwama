@@ -138,6 +138,7 @@ body {
   z-index: 20;
   height: 20%;
   padding-top: 10px;
+  opacity: 0.8;
   -webkit-transform: translate3d(0, 100%, 0);
   -moz-transform: translate3d(0, 100%, 0);
   -ms-transform: translate3d(0, 100%, 0);
@@ -156,9 +157,8 @@ body {
 #game #choices > div {
   width: 100%;
   white-space: nowrap;
-  font-weight: 400;
   font-size: 16px;
-  color: #fff;
+  color: #eee;
   text-align: left;
   cursor: pointer;
   position: relative;
@@ -190,11 +190,11 @@ body {
   width: 100%;
   cursor: default;
   z-index: 30;
-  -webkit-transition: top 0.1s ease-in-out;
-  -moz-transition: top 0.1s ease-in-out;
-  -ms-transition: top 0.1s ease-in-out;
-  -o-transition: top 0.1s ease-in-out;
-  transition: top 0.1s ease-in-out;
+  -webkit-transition: top 0.8s ease-in-out;
+  -moz-transition: top 0.8s ease-in-out;
+  -ms-transition: top 0.8s ease-in-out;
+  -o-transition: top 0.8s ease-in-out;
+  transition: top 0.8s ease-in-out;
 }
 #game #dialogue > div {
   position: relative;

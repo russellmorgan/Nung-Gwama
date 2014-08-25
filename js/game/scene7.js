@@ -4,11 +4,11 @@
 
 var meetStonePedlar = function() {
   N("Next, a seller of millstones heard her crying");
-  p("I will give you this millstone, It is very, very heavy.");
-  p("You must hang it from the ceiling above your bed.");
-  p("If you can get the Nung Gwama to stand below it, cut the strings and maybe the millstone will fall on the monster's head and knock him out.");
-  p("But then it will still be necessary to finish him off, so here is an iron bar.");
-  p("You can beat out any life that is left in him.");
+  p("&#8220;I will give you this millstone, It is very, very heavy.&#8221;");
+  p("&#8220;You must hang it from the ceiling above your bed.&#8221;");
+  p("&#8220;If you can get the Nung Gwama to stand below it, cut the strings and maybe the millstone will fall on the monster's head and knock him out.&#8221;");
+  p("&#8220;But then it will still be necessary to finish him off, so here is an iron bar.&#8221;");
+  p("&#8220;You can beat out any life that is left in him.&#8221;");
 
     Choose({
         "Accept the heavy millstone":takeStone,

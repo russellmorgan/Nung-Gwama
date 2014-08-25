@@ -3,16 +3,16 @@
  */
 
 var meetEggSeller = function() {
-    N("An egg seller came by next, shouting,");
-    p("Eggs!");
-    p("Fine eggs for sale!");
+    N("An egg seller came by next, shouting:");
+    p("&#8220;Eggs!&#8221;");
+    p("&#8220;Fine eggs for sale!&#8221;");
     N("He too, asked what was wrong. When he was told, he scratched his head and thought very hard.");
-    p("You must take these few eggs.");
-    p("Put them in the ashes of your fire.");
-    p("If the Nung Gwama is bitten by the snakes and the fish, his fingers will bleed.");
-    p("Then he will want to put them in the ashes to stop that bleeding.");
-    p("If he does that, the eggs will burst in his face.");
-    p("That should scare him out of his wickedness");
+    p("&#8220;You must take these few eggs.&#8221;");
+    p("&#8220;Put them in the ashes of your fire.&#8221;");
+    p("&#8220;If the Nung Gwama is bitten by the snakes and the fish, his fingers will bleed.&#8221;");
+    p("&#8220;Then he will want to put them in the ashes to stop that bleeding.&#8221;");
+    p("&#8220;If he does that, the eggs will burst in his face.&#8221;");
+    p("&#8220;That should scare him out of his wickedness.&#8221;");
 
     Choose({
         "Accept the eggs":takeEggs,
