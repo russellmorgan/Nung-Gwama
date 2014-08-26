@@ -1,6 +1,8 @@
 //Scene 1, in which the woman meets the terrible Nung Gwama
 
 function meetGwama(){
+    //save your place in the story
+    localStorage.scene = "meetGwama";
 
     N("The dusty road was empty.");
     N("As she walked she could see the dark grove of bamboo trees coming closer.");
