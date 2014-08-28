@@ -1,4 +1,10 @@
 //Scene 2 in which the woman cries and talks to the villagers about her situation
+var scene2 = function() {
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(meetVillagers,0);
+};
+
 
 var meetVillagers = function() {
     N("Then, after awhile, she fearfully lifted her head and looked around her.");

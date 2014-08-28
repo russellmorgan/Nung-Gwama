@@ -20,16 +20,14 @@ function Start(){
 	Choose({
 		"Walk to parents": startStory,
 		"Stay home": gameFail,
-        "*dev use: skip to the end":stayStill
+        "** dev use: skip to the end":stayStill
 	});
 
 }
 
 function startStory() {
-    N("It was a long way from her house to theirs, so she went as fast as she could on her tiny feet.")
-    fadeScene();
-    Clear();
-    meetGwama();
+    N("It was a long way from her house to theirs, so she went as fast as she could on her tiny feet.");
+    window.setTimeout(fadeToGwama,3000);
 };
 
 

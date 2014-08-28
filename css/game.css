@@ -129,6 +129,24 @@ body {
 #game #background > div {
   position: absolute;
 }
+#game #fade-out {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 99;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  -webkit-transition: opacity .8s;
+  -moz-transition: opacity .8s;
+  -ms-transition: opacity .8s;
+  -o-transition: opacity .8s;
+  transition: opacity .8s;
+}
+#game #fade-out.active {
+  opacity: 1;
+}
 #game #choices {
   background: #222;
   position: fixed;
@@ -136,9 +154,10 @@ body {
   left: 0;
   width: 100%;
   z-index: 20;
-  height: 20%;
+  height: 30%;
   padding-top: 10px;
-  opacity: 0.8;
+  opacity: 1;
+  z-index: 100;
   -webkit-transform: translate3d(0, 100%, 0);
   -moz-transform: translate3d(0, 100%, 0);
   -ms-transform: translate3d(0, 100%, 0);
@@ -163,7 +182,6 @@ body {
   cursor: pointer;
   position: relative;
   opacity: 0;
-  left: 20px;
   line-height: 150%;
   -webkit-transition: top .3s opacity .3s;
   -moz-transition: top .3s opacity .3s;
@@ -175,6 +193,7 @@ body {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  padding: 2% 2% 2% 6%;
 }
 #game #choices > div[shown=true] {
   top: 0;

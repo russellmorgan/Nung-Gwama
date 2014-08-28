@@ -3,7 +3,6 @@
 function meetGwama(){
     //save your place in the story
     localStorage.scene = "meetGwama";
-
     N("The dusty road was empty.");
     N("As she walked she could see the dark grove of bamboo trees coming closer.");
     N("Suddenly, as the woman passed the grove by the side of the road, out jumped a terrible monster and it roared.");
@@ -15,31 +14,30 @@ function meetGwama(){
     Choose({
         "Look at Nung Gwama": lookGwama,
         "Hide your face from the terrible monster": hideGwama,
-        "Run Away": runGwama
+        "Run away": runGwama
     });
 
 }
 
 //actions
-
 var lookGwama = function() {
     N("He looked very fierce, and she remembered that for all things the Nung Gwama delights most is in eating people");
     N("But what strikes people about the monster is his <em>way</em> of eating.");
     N("He does not pick delicately at his food, disposing of each choice morsel in a polite manner.");
-    N("He just crunches and chews in the rudest way imaginable and gobbles up everything - hair, head, bones and all - roaring all while");
+    N("He just crunches and chews in the rudest way imaginable and gobbles up everything - hair, head, bones and all &mdash; roaring all while.");
     g('<strong>&#8220;Aargh! Aargh!&#8221;</strong>');
     N("Less frightening but still horrid, are his feet.");
     N("They are very fat, and floppy, so that as he walks you can hear them.");
     g("Flip");
     g("Flop");
     g("Flip");
-    gwamaRequest();
+    queue(gwamaRequest,0);
 };
 
 var hideGwama = function() {
     N("Now, no one likes the idea of being eaten, whether by a tiger, snake, or a dragon.");
     N("So the woman hide her face from this terrible monster");
-    gwamaRequest();
+    queue(gwamaRequest,0);
 };
 
 var runGwama = function() {
@@ -50,7 +48,8 @@ var runGwama = function() {
     N("He grabbed her and threw her into his mouth and began to eat her.");
     g("&#8220;Aargh!&#8221;");
     N("He crunched and chewed and made horrible noises the whole while.");
-    gameFail();
+    Wait(1000);
+    queue(gameFail,0);
 };
 
 var gwamaRequest = function() {
@@ -61,8 +60,7 @@ var gwamaRequest = function() {
     N("She sobbed heavily.");
     g("&#8220;All right then. This very night I will come to your house and tear you to pieces with my claws and crunch you up with my sharp teeth and eat you&#8221;");
     N("At this, the woman hung her head in despair.");
-    fadeScene();
-    Clear();
-    meetVillagers();
+    Wait(3000);
+    queue(scene2,0);
 };
 

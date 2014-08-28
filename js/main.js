@@ -19,11 +19,26 @@ window.onload = function(){
 
 };
 
+var fadeOut = document.getElementById("fade-out");
+fadeOut.addEventListener('webkitTransitionEnd', function(event) {
+    ClearScene();
+    fadeOut.className="";
+}, false);
+
 //restart the game because you died. Don't die.
 var restartGame = function() {
     fadeScene();
     Clear();
     Start();
+};
+
+var fadeToGwama = function() {
+    fadeOut.className = "active";
+    window.setTimeout(meetGwama,2000);
+};
+
+var fadeScene = function() {
+    fadeOut.className = "active";
 };
 
 //you totes won! congrats!
@@ -66,9 +81,4 @@ var gameFail = function() {
 var gwammaEatsYou = function() {
     N("The Nung Gwama arrived that evening and ate he woman up in the most disgusting way.");
     gameFail();
-};
-
-var fadeScene = function() {
-
-    //TODO: Figure out how to fade out the container with just pure css/js
 };
