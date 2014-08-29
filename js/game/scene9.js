@@ -22,7 +22,7 @@ var stayStill = function() {
     N("The Nung Gwama looked at his hands in disgust.");
     g("&#8220;Well, now that I'm in, I'll soon finish you off.&#8221;");
     g("&#8220;But first I'll wash my hands in this water.&#8221;");
-    Wait(3000);
+    Wait(2000);
     queue(fadeScene,0);
     Wait(2000);
     g("&#8220;Yee-ow! What now?&#8221;");
@@ -68,7 +68,7 @@ var staySilent = function() {
     g("flop");
     g("&#8220;Ah, there you are, hiding in your bed!&#8221;");
     A("The Nung Gwama has killed you.");
-    Wait(3000);
+    Wait(2000);
     queue(fadeScene,0);
     Wait(2000);
     queue(gameFail,0);
@@ -90,7 +90,7 @@ var hitGwama = function() {
     N("And so, instead of being eaten by a terrible monster, the woman found herself safe and sound.");
     N("And there was a rich reward for the skin and bones of the Nung Gwama, which had been a danger to the whole countryside.");
     N("So at last the poor woman had enough money to live happily ever after, and to take good care of her parents, too.");
-    Wait(3000);
+    Wait(2000);
     queue(fadeScene,0);
     Wait(2000);
     queue(wonGame,0);
@@ -105,7 +105,7 @@ var leaveGwama = function() {
     g("flop");
     g("flip");
     g("flop");
-    Wait(3000);
+    Wait(2000);
     queue(fadeScene,0);
     Wait(2000);
     queue(gameFail,0);

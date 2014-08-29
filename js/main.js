@@ -42,7 +42,8 @@ var wonGame = function() {
 
     Choose({
         "See the Credits":showCredits,
-        "Share this experience":socialShare
+        "Share this experience":socialShare,
+        "Replay":newGame
     })
 };
 

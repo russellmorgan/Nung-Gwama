@@ -25,13 +25,13 @@ var meetSnakePedlar = function() {
 var refuseSnakes = function() {
     N("The woman was quite afraid of the snakes and refused.");
     N("She thanked him for his kindness and the pedlar went on his way.");
-    Wait(3000);
+    Wait(2000);
     queue(scene5,0);
 };
 
 var takeSnakes = function() {
    requiredItems.snakes = 1;
    N("The woman thanked him for his kindness, but soon she was weeping again &mdash; for what could mere snakes do against the terrible Nung Gwama?");
-    Wait(3000);
+    Wait(2000);
     queue(scene5,0);
 };

@@ -12,7 +12,7 @@ var goBackHome = function() {
     //NOTE: fade screen to dark night?
     N("By the time she had prepared everything it was very dark");
     N("She went to bed and lay there, shivering and shaking with fear.");
-    Wait(3000);
+    Wait(2000);
     queue(fadeScene,0);
     Wait(2000);
     queue(stillWaiting,0);
@@ -38,7 +38,7 @@ var speakWatchman = function() {
     watch("&#8220;It is true that the Nung Gwama always does what he says.&#8221;");
     watch("&#8220;But we will watch over you tonight.&#8221;");
     N("The woman did not feel much better but thanked the watchman and returned to bed.");
-    Wait(3000);
+    Wait(2000);
     queue(waitGwama,0);
 };
 
@@ -53,7 +53,7 @@ var waitGwama = function() {
     g("Flip");
     g("Flop");
     N("It was the fat and floppy feet of the Nung Gwama, and they were just outside her door!");
-    Wait(3000);
+    Wait(2000);
     queue(confrontGwama,0);
 };
 
@@ -74,7 +74,7 @@ var openDoor = function() {
     g("&#8220;Aargh!&#8221;");
     N("The Terrible monster reached for the woman and tore at her with all his might.");
     A("The Nung Gwama has killed you.");
-    Wait(3000);
+    Wait(2000);
     queue(fadeScene,0);
     Wait(2000);
     queue(gameFail,0);

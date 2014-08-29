@@ -1,8 +1,8 @@
 //Scene 1, in which the woman meets the terrible Nung Gwama
 
 function meetGwama(){
-    //save your place in the story
-    localStorage.scene = "meetGwama";
+    //save your place in the story TODO: getting an iphone error here...
+    //localStorage.scene = "meetGwama";
     N("The dusty road was empty.");
     N("As she walked she could see the dark grove of bamboo trees coming closer.");
     N("Suddenly, as the woman passed the grove by the side of the road, out jumped a terrible monster and it roared.");
@@ -60,7 +60,7 @@ var gwamaRequest = function() {
     N("She sobbed heavily.");
     g("&#8220;All right then. This very night I will come to your house and tear you to pieces with my claws and crunch you up with my sharp teeth and eat you&#8221;");
     N("At this, the woman hung her head in despair.");
-    Wait(3000);
+    Wait(2000);
     queue(scene2,0);
 };
 

@@ -24,7 +24,7 @@ var meetEggSeller = function() {
 
 var refuseEggs = function() {
     N("The woman did not think just two eggs would scare the Nung Gwama and refused.");
-    Wait(3000);
+    Wait(2000);
     queue(scene7,0);
 };
 
@@ -32,6 +32,6 @@ var takeEggs = function() {
     requiredItems.eggs = 1;
     N("The woman did not think it would be so easy to scare the terrible Nung Gwama, but she thanked him and took the eggs.");
     N("She then cried louder than ever.");
-    Wait(3000);
+    Wait(2000);
     queue(scene7,0);
 };

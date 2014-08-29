@@ -22,13 +22,13 @@ var refuseStone = function() {
     N("The woman could not see how she would get the heavy stone home.");
     w("Thank you but I could not possibly carry something so heavy.");
     N("The millstone pedlar wished her luck and continued on his way.");
-    Wait(3000);
+    Wait(2000);
     queue(scene8,0);
 };
 
 var takeStone = function() {
     requiredItems.stone = 1;
     N("The woman took the millstone with gratitude and the seller went on his way.");
-    Wait(3000);
+    Wait(2000);
     queue(scene8,0);
 };
