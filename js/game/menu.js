@@ -20,7 +20,7 @@ function Start(){
 	Choose({
 		"Walk to parents": startStory,
 		"Stay home": gameFail,
-        "** dev use: skip to the end":stayStill
+        "** dev use: skip to the end":scene8
 	});
 
 }

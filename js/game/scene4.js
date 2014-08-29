@@ -1,5 +1,11 @@
 //Snake pedlar
 
+var scene4 = function() {
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(meetSnakePedlar,0);
+}
+
 var meetSnakePedlar = function() {
     N("Soon a man came by, calling out...");
     p("&#8220;Snakes for sale!&#8221;");
@@ -19,15 +25,13 @@ var meetSnakePedlar = function() {
 var refuseSnakes = function() {
     N("The woman was quite afraid of the snakes and refused.");
     N("She thanked him for his kindness and the pedlar went on his way.");
-    fadeScene();
-    Clear();
-    meetFishPedlar();
+    Wait(3000);
+    queue(scene5,0);
 };
 
 var takeSnakes = function() {
    requiredItems.snakes = 1;
    N("The woman thanked him for his kindness, but soon she was weeping again &mdash; for what could mere snakes do against the terrible Nung Gwama?");
-    fadeScene();
-    Clear();
-    meetFishPedlar();
+    Wait(3000);
+    queue(scene5,0);
 };

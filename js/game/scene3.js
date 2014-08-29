@@ -1,5 +1,11 @@
 //Manure pedlar
 
+var scene3 = function() {
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(meetManurePedlar,0);
+};
+
 var meetManurePedlar = function() {
     N("Her wails attracted a man who collected manure, which he used to fertilize his fields.");
     N("He asked her what was the matter.");
@@ -14,17 +20,16 @@ var meetManurePedlar = function() {
 };
 
 var takeManure = function() {
+    //record inventory
+    requiredItems.manure = 1;
     N("The woman accepted his gift, but she cried as loudly as ever, for she thought it would be of little help against the terrible Nung Gwama.");
-    fadeScene();
-    Clear();
-    meetSnakePedlar();
+    Wait(3000);
+    queue(scene4,0);
 };
 
 var refuseManure = function() {
-   requiredItems.manure = 1;
    N("The smell of the manure was too much for the woman and she refused his gift.");
    N("And so the man shrugged and continued on his way.");
-    fadeScene();
-    Clear();
-    meetSnakePedlar();
+    Wait(3000);
+    queue(scene4,0);
 };

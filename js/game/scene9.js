@@ -1,12 +1,11 @@
-/**
- * Created by russellmorgan on 8/22/14.
- * Where we have our final match with the Terrible Nung Gwama
- */
+var scene9 = function() {
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(stayStill,0);
+};
 
 
 var stayStill = function() {
-    fadeScene();
-    Clear();
     N("The woman could not move, she was so frightened.");
     N("The Nung Gwama rushed at the door and tore it down.");
 
@@ -23,8 +22,9 @@ var stayStill = function() {
     N("The Nung Gwama looked at his hands in disgust.");
     g("&#8220;Well, now that I'm in, I'll soon finish you off.&#8221;");
     g("&#8220;But first I'll wash my hands in this water.&#8221;");
-    //pause here....
-    Clear();
+    Wait(3000);
+    queue(fadeScene,0);
+    Wait(2000);
     g("&#8220;Yee-ow! What now?&#8221;");
     N("Nung Gwama howled, for the snakes had just bitten him with their poisoned fangs.");
     g("&#8220;But here's a cooking pot. There will be nice warm water in that to take away this pain.&#8221;");
@@ -68,9 +68,10 @@ var staySilent = function() {
     g("flop");
     g("&#8220;Ah, there you are, hiding in your bed!&#8221;");
     A("The Nung Gwama has killed you.");
-    fadeScene();
-    Clear();
-    restartGame();
+    Wait(3000);
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(gameFail,0);
 };
 
 var cutString = function() {
@@ -89,9 +90,10 @@ var hitGwama = function() {
     N("And so, instead of being eaten by a terrible monster, the woman found herself safe and sound.");
     N("And there was a rich reward for the skin and bones of the Nung Gwama, which had been a danger to the whole countryside.");
     N("So at last the poor woman had enough money to live happily ever after, and to take good care of her parents, too.");
-    fadeScene();
-    Clear();
-    wonGame();
+    Wait(3000);
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(wonGame,0);
 };
 
 var leaveGwama = function() {
@@ -103,7 +105,8 @@ var leaveGwama = function() {
     g("flop");
     g("flip");
     g("flop");
-    fadeScene();
-    Clear();
-    restartGame();
+    Wait(3000);
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(gameFail,0);
 }

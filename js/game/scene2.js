@@ -67,16 +67,12 @@ var takeNeedles = function() {
     N("And the pedlar picked up his baskets and the pole and went off again.");
     N("The woman, still frightened, continued to cry.");
     N("For how could a few needles save her from the Nung Gwama?");
-
-    fadeScene();
-    Clear();
-    meetManurePedlar();
+    Wait(3000);
+    queue(scene3,0);
 }
 
 var refuseNeedles = function() {
     N("The woman could not think of how the needles would ever stop something as terrible as the Nung Gwama and refused the gift.");
     N("And the pedlar picked up his baskets and the pole and went off again.");
-    fadeScene();
-    Clear();
-    meetManurePedlar();
+    queue(scene3,0);
 };

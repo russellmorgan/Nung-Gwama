@@ -1,6 +1,8 @@
-/**
- * Created by russellmorgan on 8/22/14.
- */
+var scene6 = function() {
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(meetEggSeller,0);
+};
 
 var meetEggSeller = function() {
     N("An egg seller came by next, shouting:");
@@ -22,16 +24,14 @@ var meetEggSeller = function() {
 
 var refuseEggs = function() {
     N("The woman did not think just two eggs would scare the Nung Gwama and refused.");
-    fadeScene();
-    Clear();
-    meetStonePedlar();
+    Wait(3000);
+    queue(scene7,0);
 };
 
 var takeEggs = function() {
     requiredItems.eggs = 1;
     N("The woman did not think it would be so easy to scare the terrible Nung Gwama, but she thanked him and took the eggs.");
     N("She then cried louder than ever.");
-    fadeScene();
-    Clear();
-    meetStonePedlar();
+    Wait(3000);
+    queue(scene7,0);
 };

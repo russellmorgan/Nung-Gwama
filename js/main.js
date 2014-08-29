@@ -25,12 +25,6 @@ fadeOut.addEventListener('webkitTransitionEnd', function(event) {
     fadeOut.className="";
 }, false);
 
-//restart the game because you died. Don't die.
-var restartGame = function() {
-    fadeScene();
-    Clear();
-    Start();
-};
 
 var fadeToGwama = function() {
     fadeOut.className = "active";
@@ -69,8 +63,6 @@ var requiredItems = {};
 
 //You died somehow, nice job...
 var gameFail = function() {
-    fadeScene();
-    Clear();
     Choose({
         "Try Again":restartGame
     })
