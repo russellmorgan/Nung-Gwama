@@ -63,14 +63,15 @@ var requiredItems = {};
 
 //You died somehow, nice job...
 var gameFail = function() {
+    N("Game failed, need to put some conditionals based on fail reason.")
     Choose({
-        "Try Again":restartGame
+        "Try Again":newGame
     })
-    //TODO: load a 'you are dead' screen & animation
 };
 
-//Nung Gwama came to eat you
-var gwammaEatsYou = function() {
-    N("The Nung Gwama arrived that evening and ate he woman up in the most disgusting way.");
-    gameFail();
+
+var newGame = function() {
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(Start,0);
 };

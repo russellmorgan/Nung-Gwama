@@ -19,11 +19,17 @@ function Start(){
 
 	Choose({
 		"Walk to parents": startStory,
-		"Stay home": gameFail,
+		"Stay home": noStory,
         "** dev use: skip to the end":scene8
 	});
 
 }
+
+function noStory() {
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(gameFail,0);
+};
 
 function startStory() {
     N("It was a long way from her house to theirs, so she went as fast as she could on her tiny feet.");
