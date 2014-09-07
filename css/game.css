@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background: url(../img/backgrounds/paper.jpg) top left no-repeat;
   overflow: hidden;
   height: 100%;
   position: absolute;
@@ -15,8 +15,34 @@ body {
   font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
   margin: 0;
 }
+.hidden {
+  opacity: 0;
+}
+body.cover {
+  background: url(../img/backgrounds/paper.jpg) top left no-repeat;
+}
+body.cover .splash {
+  padding: 6%;
+}
+body.cover h2 {
+  text-align: left;
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20%;
+}
+body.cover .actions {
+  display: block;
+  margin: 10% 0 10% 0;
+  color: #333;
+  text-decoration: none;
+  font-family: Arial, "Helvetica Neue Light", HelveticaNeue-Light, "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  padding: 2%;
+  border-bottom: 1px solid #999999;
+}
 #game_container {
-  background: #222;
+  background: transparent;
   width: 100%;
   height: 100%;
   position: relative;
@@ -121,7 +147,6 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #666;
   overflow: hidden;
   background-repeat: no-repeat;
   z-index: 10;
@@ -132,7 +157,7 @@ body {
 #game #fade-out {
   width: 100%;
   height: 100%;
-  background: #666;
+  background: #fff;
   z-index: 99;
   position: absolute;
   top: 0px;
@@ -148,7 +173,7 @@ body {
   opacity: 1;
 }
 #game #choices {
-  background: #222;
+  background: #ffffff;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -165,6 +190,7 @@ body {
   transform: translate3d(0, 100%, 0);
   -webkit-transition-duration: .8s;
   transition-duration: .8s;
+  border-top: 1px solid #eee;
 }
 #game #choices.active {
   -webkit-transform: translate3d(0, 0, 0);
@@ -177,7 +203,7 @@ body {
   width: 100%;
   white-space: nowrap;
   font-size: 16px;
-  color: #eee;
+  color: #222;
   text-align: left;
   cursor: pointer;
   position: relative;
@@ -194,6 +220,8 @@ body {
   -o-user-select: none;
   user-select: none;
   padding: 2% 2% 2% 6%;
+  font-family: Arial, "Helvetica Neue Light", HelveticaNeue-Light, "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 #game #choices > div[shown=true] {
   top: 0;
@@ -222,7 +250,7 @@ body {
   display: inline-block;
   max-width: 260px;
   border-radius: 0px;
-  box-shadow: 2px 2px 4px #333;
+  box-shadow: 2px 2px 4px #ccc;
   clear: both;
   opacity: 0;
   -webkit-transition: opacity 0.8s ease-in-out;
@@ -236,7 +264,8 @@ body {
   -o-user-select: none;
   user-select: none;
   margin: 10px 25px 0;
-  padding: 10px;
+  padding: 14px;
+  background: #fffff0;
 }
 #game #dialogue > div.conversation {
   font-family: Arial, "Helvetica Neue Light", HelveticaNeue-Light, "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
@@ -287,11 +316,4 @@ body {
 #game[screen=loading] > #loading,
 #game[screen=credits] > #credits {
   display: block;
-}
-.splash {
-  text-align: center;
-  padding: 6%;
-}
-.splash h1 {
-  text-align: center;
 }

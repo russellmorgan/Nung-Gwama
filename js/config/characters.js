@@ -1,5 +1,5 @@
 // Narrator
-N = new Character({ align:"left", background:"#FFF", color:"#000", sound:"text_mid" });
+N = new Character({ align:"left", background:"rgb(255,255,250)", color:"#000", sound:"text_mid" });
 
 // Action chosen
 A = new Character({ align:"action", background:"#999", color:"#fff", sound:"text_low" });
@@ -8,7 +8,7 @@ A = new Character({ align:"action", background:"#999", color:"#fff", sound:"text
 w = new Character({ align:"left conversation", background:"#79B8FE", sound:"text_mid" });
 
 // Gwama
-g = new Character({ align:"right conversation", background:"#333", color:"#bbb", sound:"text_low" });
+g = new Character({ align:"right conversation", background:"#333", color:"#fff", sound:"text_low" });
 
 //pedlars
 p = new Character({ align:"right conversation", background:"#F1E1C6", color:"#000", sound:"text_low" });
