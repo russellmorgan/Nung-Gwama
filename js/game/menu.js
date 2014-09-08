@@ -10,7 +10,7 @@ function Start(){
 	//PlaySound("bg","coffeehouse",{loop:-1, volume:0.7});
 
 	//////////////////////////////
-	N("Once, long ago in China, a poor young woman decided to honor her parents by taking them some rice cakes.");
+    N("Once, long ago in China, a poor young woman decided to honor her parents by taking them some rice cakes.");
 	N("The path to their home went by a very dark grove of bamboo trees.");
     N("People said a monster called the Terrible Nung Gwama lived there.");
     N("They said the monster ate animals of all kinds and also ate people.");
