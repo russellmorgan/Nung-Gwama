@@ -19,8 +19,8 @@ function Start(){
 
 	Choose({
 		"Walk to parents": startStory,
-		"Stay home": noStory,
-        "** dev use: skip to the end":scene8
+		"Stay home": noStory
+        //"** dev use: skip to the end":scene8
 	});
 
 }
