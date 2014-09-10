@@ -19,8 +19,8 @@ function Start(){
 
 	Choose({
 		"Walk to parents": startStory,
-		"Stay home": noStory
-        //"** dev use: skip to the end":scene8
+		"Stay home": noStory,
+        "*! dev test link":scene9
 	});
 
 }
@@ -28,7 +28,15 @@ function Start(){
 function noStory() {
     queue(fadeScene,0);
     Wait(2000);
-    queue(gameFail,0);
+    N("And so the woman decided it was best if she stayed home, rather than risk an encounter with such a terrible monster.");
+    N("In another village down the path her parents often wondered why their daughter did not visit.");
+    N("They had found a wonderful husband for her and no feared that she would die alone and unloved.");
+    Wait(2000);
+    Choose({
+        "Find your courage":newGame,
+        "See the Credits":showCredits
+    })
+
 };
 
 function startStory() {
@@ -37,3 +45,27 @@ function startStory() {
 };
 
 
+var wonGame = function() {
+    queue(fadeScene,0);
+    Wait(2000);
+    N("Thank you for playing.");
+    N("The End.");
+
+    Choose({
+        "See the Credits":showCredits,
+        "Share this experience":socialShare,
+        "Replay":newGame
+    })
+};
+
+
+var showCredits = function() {
+    queue(fadeScene,0);
+    Wait(2000);
+    N("For Harry, dad loves you.");
+    N("Code by Russell Morgan, Subreference Studios");
+    N("Technical thanks go out to Nicky Case and his Coming Out Simulator on which this code is based.");
+    Choose({
+        "Replay":newGame
+    })
+};

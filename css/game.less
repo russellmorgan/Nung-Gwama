@@ -1,3 +1,19 @@
+//font definitions
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans 600';
+  src: url('../font/OpenSans-Semibold.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans 800';
+  src: url('../font/OpenSans-Bold.ttf');
+}
+
 body {
   background: url(../img/backgrounds/paper.jpg) top left no-repeat;
   overflow:hidden;
@@ -118,6 +134,7 @@ body.cover {
   text-align:center;
   width:100%;
   margin:auto;
+  padding-top: 50%;
 }
 
 #loading > div > #loading_bar {
@@ -243,9 +260,7 @@ body.cover {
   -o-user-select:none;
   user-select:none;
   padding:2% 2% 2% 6%;
-  font-family: 'Open Sans', sans-serif;
-  //font-family: Arial, "Helvetica Neue Light", HelveticaNeue-Light, "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-family:"Open Sans 600";
 }
 
 #game #choices > div[shown=true] {
@@ -348,7 +363,7 @@ body.cover {
 }
 
 #game #dialogue > div.gwama {
-  font-weight:600
+  font-family: "Open Sans 600";
 }
 
 #game[screen=loading] > #loading,#game[screen=credits] > #credits {

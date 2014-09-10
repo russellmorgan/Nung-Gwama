@@ -22,7 +22,7 @@ subscribe("say", function(character, message){
 	dialogueDOM.appendChild(dom);
 
 	// Play sounds
-	createjs.Sound.play(character.sound);
+	//createjs.Sound.play(character.sound);
 
 	// Fade in
 	setTimeout(function(){

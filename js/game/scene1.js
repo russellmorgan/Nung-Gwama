@@ -13,7 +13,7 @@ function meetGwama(){
 
     Choose({
         "Look at Nung Gwama": lookGwama,
-        "Hide your face from the terrible monster": hideGwama,
+        "Look Elsewhere": hideGwama,
         "Run away": runGwama
     });
 

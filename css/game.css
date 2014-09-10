@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Open Sans 600';
+  src: url('../font/OpenSans-Semibold.ttf');
+}
+@font-face {
+  font-family: 'Open Sans 800';
+  src: url('../font/OpenSans-Bold.ttf');
+}
 body {
   background: url(../img/backgrounds/paper.jpg) top left no-repeat;
   overflow: hidden;
@@ -109,6 +121,7 @@ body.cover .actions {
   text-align: center;
   width: 100%;
   margin: auto;
+  padding-top: 50%;
 }
 #loading > div > #loading_bar {
   height: 5px;
@@ -220,8 +233,7 @@ body.cover .actions {
   -o-user-select: none;
   user-select: none;
   padding: 2% 2% 2% 6%;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: "Open Sans 600";
 }
 #game #choices > div[shown=true] {
   top: 0;
@@ -310,7 +322,7 @@ body.cover .actions {
   margin-right: 20px;
 }
 #game #dialogue > div.gwama {
-  font-weight: 600;
+  font-family: "Open Sans 600";
 }
 #game[screen=loading] > #loading,
 #game[screen=credits] > #credits {

@@ -35,23 +35,9 @@ var fadeScene = function() {
     fadeOut.className = "active";
 };
 
-//you totes won! congrats!
-var wonGame = function() {
-    N("Thank you for playing.");
-    N("The end.");
 
-    Choose({
-        "See the Credits":showCredits,
-        "Share this experience":socialShare,
-        "Replay":newGame
-    })
-};
 
-var showCredits = function() {
-    fadeScene();
-    Clear();
-    N("Credits here...")
-};
+
 
 var socialShare = function() {
     fadeScene();
