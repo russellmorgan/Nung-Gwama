@@ -67,7 +67,6 @@ var staySilent = function() {
     g("flip");
     g("flop");
     g("&#8220;Ah, there you are, hiding in your bed!&#8221;");
-    A("The Nung Gwama has killed you.");
     Wait(2000);
     queue(fadeScene,0);
     Wait(2000);
@@ -75,7 +74,8 @@ var staySilent = function() {
 };
 
 var cutString = function() {
-    N("As he came close by the woman cut the string");
+    N("As he came close by the woman cut the string...");
+    Wait(1000);
     N("Down fell the millstone, right onto the Nung Gwama's back.");
     N("And down fell Nung Gwama, looking quite dead.");
 

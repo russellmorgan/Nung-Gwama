@@ -11,7 +11,7 @@
   src: url('../font/OpenSans-Bold.ttf');
 }
 body {
-  background: url(../img/backgrounds/paper.jpg) top left no-repeat;
+  background: url(../img/backgrounds/paper.jpg) 0px 0px no-repeat;
   overflow: hidden;
   height: 100%;
   position: absolute;

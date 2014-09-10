@@ -44,6 +44,7 @@ function startStory() {
     window.setTimeout(fadeToGwama,3000);
 };
 
+//Game Conditions
 
 var wonGame = function() {
     queue(fadeScene,0);
@@ -67,5 +68,13 @@ var showCredits = function() {
     N("Technical thanks go out to Nicky Case and his Coming Out Simulator on which this code is based.");
     Choose({
         "Replay":newGame
+    })
+};
+
+//You died somehow, nice job...
+var gameFail = function() {
+    N("Game failed, need to put some conditionals based on fail reason.")
+    Choose({
+        "Try Again":newGame
     })
 };

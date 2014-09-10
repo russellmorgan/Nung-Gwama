@@ -33,9 +33,13 @@ var fadeToGwama = function() {
 
 var fadeScene = function() {
     fadeOut.className = "active";
+    window.setTimeout('randomBackground()',800);
 };
 
-
+var randomBackground = function() {
+    var ran = Math.floor(Math.random()*2000)*-1; ran = ran+"px";
+    document.body.style.backgroundPositionX = ran;
+};
 
 
 
@@ -48,13 +52,6 @@ var socialShare = function() {
 //tracks items you'll need to kill Gwama and win the game
 var requiredItems = {};
 
-//You died somehow, nice job...
-var gameFail = function() {
-    N("Game failed, need to put some conditionals based on fail reason.")
-    Choose({
-        "Try Again":newGame
-    })
-};
 
 
 var newGame = function() {

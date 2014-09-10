@@ -83,7 +83,7 @@ function ClearDialogue(){
 }
 
 function ClearScene(){
-	createjs.Sound.stop();
+	//createjs.Sound.stop();
 	_sceneItems = {};
 	_soundItems = {};
 	backgroundDOM.innerHTML = "";
