@@ -19,6 +19,8 @@ var meetStonePedlar = function() {
 };
 
 var refuseStone = function() {
+    A("You refuse the millstone");
+    Wait(1000);
     N("The woman could not see how she would get the heavy stone home.");
     w("Thank you but I could not possibly carry something so heavy.");
     N("The millstone pedlar wished her luck and continued on his way.");
@@ -28,6 +30,8 @@ var refuseStone = function() {
 
 var takeStone = function() {
     requiredItems.stone = 1;
+    A("You accept the stone");
+    Wait(1000);
     N("The woman took the millstone with gratitude and the seller went on his way.");
     Wait(2000);
     queue(scene8,0);

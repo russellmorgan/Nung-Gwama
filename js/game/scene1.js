@@ -21,6 +21,8 @@ function meetGwama(){
 
 //actions
 var lookGwama = function() {
+    A("You look at the Nung Gwama");
+    Wait(1000);
     N("He looked very fierce, and she remembered that for all things the Nung Gwama delights most is in eating people");
     N("But what strikes people about the monster is his <em>way</em> of eating.");
     N("He does not pick delicately at his food, disposing of each choice morsel in a polite manner.");
@@ -35,20 +37,27 @@ var lookGwama = function() {
 };
 
 var hideGwama = function() {
+    A("You hide your face from the terrible Nung Gwama");
+    Wait(1000);
     N("Now, no one likes the idea of being eaten, whether by a tiger, snake, or a dragon.");
     N("So the woman hide her face from this terrible monster");
     queue(gwamaRequest,0);
 };
 
 var runGwama = function() {
-    N("With all her strength the woman turned away from the monster and ran as fast as she could");
-    N("Nung Gwama roared again and chased after her");
+    deathType = "ran";
+    A("You turn and flee from the monster");
+    Wait(1000);
+    N("With all her strength the woman turned away from the monster and ran as fast as she could.");
+    N("The Nung Gwama roared again and chased after her.");
     g("&#8220;Aargh! I will eat you whole!&#8221;");
     N("And with that the monster caught up with the woman, for he was very big and very strong.");
     N("He grabbed her and threw her into his mouth and began to eat her.");
     g("&#8220;Aargh!&#8221;");
     N("He crunched and chewed and made horrible noises the whole while.");
-    Wait(1000);
+    Wait(2000);
+    queue(fadeScene,0);
+    Wait(2000);
     queue(gameFail,0);
 };
 

@@ -22,12 +22,16 @@ var meetManurePedlar = function() {
 var takeManure = function() {
     //record inventory
     requiredItems.manure = 1;
+    A("You take the manure");
+    Wait(1000);
     N("The woman accepted his gift, but she cried as loudly as ever, for she thought it would be of little help against the terrible Nung Gwama.");
     Wait(2000);
     queue(scene4,0);
 };
 
 var refuseManure = function() {
+   A("You refuse the manure");
+    Wait(1000);
    N("The smell of the manure was too much for the woman and she refused his gift.");
    N("And so the man shrugged and continued on his way.");
     Wait(2000);

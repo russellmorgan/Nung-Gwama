@@ -22,6 +22,8 @@ var meetFishPedlar = function() {
 };
 
 var refuseFish = function() {
+    A("You refuse the fish");
+    Wait(1000);
     N("The woman could not see how two small fish would save her from the Nung Gwama.");
     w("Thank you for your kindness but please keep your fish.");
     N("The fish monger wished her luck and continued on his way.");
@@ -31,6 +33,8 @@ var refuseFish = function() {
 
 var takeFish = function() {
     requiredItems.fish = 1;
+    A("You take the fish");
+    Wait(1000);
     N("The woman thought that was very unlikely, but she took the fish and the cooking pot and thanked him.");
     N("She went on sobbing loudly.");
     Wait(2000);

@@ -30,6 +30,7 @@ body {
   user-select:none;
   font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
   margin:0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .hidden {
@@ -45,8 +46,8 @@ body.cover {
     text-align: left;
     font-size: 3em;
     padding: 0;
-    margin:0;
-    margin-bottom:20%;
+    margin:0 0 20% 0;
+    line-height:100%;
   }
   .actions {
     display: block;
@@ -216,7 +217,7 @@ body.cover {
   left:0;
   width:100%;
   z-index:20;
-  height:30%;
+  height:22%;
   padding-top:10px;
   opacity:1;
   z-index:100;
@@ -356,9 +357,16 @@ body.cover {
 }
 
 #game #dialogue > div.action {
-  text-align:right;
-  float:right;
-  margin-right:20px;
+  text-align:center;
+  float:none;
+  margin:auto;
+  font-size:12px;
+  font-family: "Open Sans";
+  border:0;
+  box-shadow: none;
+  width: 80%;
+  display: block;
+  //text-shadow: 0px 1px 1px #eee;
 }
 
 #game #dialogue > div.gwama {

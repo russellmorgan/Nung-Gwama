@@ -31,6 +31,8 @@ var stillWaiting = function() {
 };
 
 var speakWatchman = function() {
+    A("You speak with the night watchman");
+    Wait(1000);
     N("The woman ventured out to her front door and saw the watchman");
     w("&#8220;Have you seen a terrible monster on your watch tonight?&#8221;");
     N("The watchman replied that all had been quiet on the first two watches");
@@ -70,10 +72,11 @@ var confrontGwama = function() {
 };
 
 var openDoor = function() {
+    A("You open the door");
+    Wait(1000);
     N("The woman did as the Nung Gwama asked.");
     g("&#8220;Aargh!&#8221;");
     N("The Terrible monster reached for the woman and tore at her with all his might.");
-    A("The Nung Gwama has killed you.");
     Wait(2000);
     queue(fadeScene,0);
     Wait(2000);

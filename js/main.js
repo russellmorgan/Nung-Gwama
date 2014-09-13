@@ -26,21 +26,15 @@ fadeOut.addEventListener('webkitTransitionEnd', function(event) {
 }, false);
 
 
-var fadeToGwama = function() {
-    fadeOut.className = "active";
-    window.setTimeout(meetGwama,2000);
-};
-
 var fadeScene = function() {
     fadeOut.className = "active";
     window.setTimeout('randomBackground()',800);
 };
 
 var randomBackground = function() {
-    var ran = Math.floor(Math.random()*2000)*-1; ran = ran+"px";
+    var ran = Math.floor(Math.random()*1000)*-1; ran = ran+"px";
     document.body.style.backgroundPositionX = ran;
 };
-
 
 
 var socialShare = function() {
@@ -52,6 +46,8 @@ var socialShare = function() {
 //tracks items you'll need to kill Gwama and win the game
 var requiredItems = {};
 
+//Other things to track in the game
+var deathType;
 
 
 var newGame = function() {

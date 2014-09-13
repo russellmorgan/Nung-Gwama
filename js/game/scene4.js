@@ -23,6 +23,8 @@ var meetSnakePedlar = function() {
 };
 
 var refuseSnakes = function() {
+    A("You refuse the snakes");
+    Wait(1000);
     N("The woman was quite afraid of the snakes and refused.");
     N("She thanked him for his kindness and the pedlar went on his way.");
     Wait(2000);
@@ -31,6 +33,8 @@ var refuseSnakes = function() {
 
 var takeSnakes = function() {
    requiredItems.snakes = 1;
+   A("You take the snakes");
+    Wait(1000);
    N("The woman thanked him for his kindness, but soon she was weeping again &mdash; for what could mere snakes do against the terrible Nung Gwama?");
     Wait(2000);
     queue(scene5,0);

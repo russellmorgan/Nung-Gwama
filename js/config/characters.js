@@ -2,7 +2,7 @@
 N = new Character({ align:"left", background:"rgb(255,255,250)", color:"#000", sound:"text_mid" });
 
 // Action chosen
-A = new Character({ align:"action", background:"#999", color:"#fff", sound:"text_low" });
+A = new Character({ align:"action", background:"transparent", color:"#111", sound:"text_low" });
 
 // Woman
 w = new Character({ align:"left conversation", background:"rgb(255,230,255)", sound:"text_mid" });

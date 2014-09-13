@@ -1,13 +1,6 @@
 function Start(){
 
-	gameObj = {};
-	
-	/////// SET UP SCENE ////////
-
-	//Show("background","intro");
-	//Show("nicky","coffee_nicky_still");
-
-	//PlaySound("bg","coffeehouse",{loop:-1, volume:0.7});
+	//gameObj = {};
 
 	//////////////////////////////
     N("Once, long ago in China, a poor young woman decided to honor her parents by taking them some rice cakes.");
@@ -18,9 +11,9 @@ function Start(){
     N("It crunched and chewed up everything, hair bones and all.")
 
 	Choose({
-		"Walk to parents": startStory,
+		"Visit parents": startStory,
 		"Stay home": noStory,
-        "*! dev test link":scene9
+        "":scene9
 	});
 
 }
@@ -30,7 +23,7 @@ function noStory() {
     Wait(2000);
     N("And so the woman decided it was best if she stayed home, rather than risk an encounter with such a terrible monster.");
     N("In another village down the path her parents often wondered why their daughter did not visit.");
-    N("They had found a wonderful husband for her and no feared that she would die alone and unloved.");
+    N("They had found a wonderful husband for her and now feared that she would die alone and unloved.");
     Wait(2000);
     Choose({
         "Find your courage":newGame,
@@ -40,8 +33,12 @@ function noStory() {
 };
 
 function startStory() {
+    A("You choose to visit your parents");
+    Wait(1000);
     N("It was a long way from her house to theirs, so she went as fast as she could on her tiny feet.");
-    window.setTimeout(fadeToGwama,3000);
+    queue(fadeScene,0);
+    Wait(2000);
+    queue(meetGwama,0);
 };
 
 //Game Conditions
@@ -73,8 +70,13 @@ var showCredits = function() {
 
 //You died somehow, nice job...
 var gameFail = function() {
-    N("Game failed, need to put some conditionals based on fail reason.")
+    //player tried to run away
+    if(deathType === "ran") {
+        N("Despite his floppy feet the Nun Gwama is very fast.");
+    }
+    N("The End.");
+
     Choose({
-        "Try Again":newGame
+        "Try the story again":newGame
     })
 };

@@ -21,6 +21,8 @@ var meetVillagers = function() {
 
 var speakVillager1= function() {
     //villager 1 dialog
+    A("You speak with the first villager");
+    Wait(1000);
     w("&#8220;The terrible Nung Gwama is coming tonight to tear me to pieces and crunch me up and eat me.&#8221;");
     N("The villager looked at his wife and nodded his head");
     N("It was true, he said, she might as well prepare to die: The Nung Gwama always came when he said he would.");
@@ -33,11 +35,15 @@ var speakVillager1= function() {
 };
 
 var speakVillager2 = function() {
-     N("Another villager agreed that she would certainly be eaten by the Nung Gwama.");
+     A("You speak to another villager close by");
+     Wait(1000);
+     N("The villager agreed that she would certainly be eaten by the Nung Gwama.");
      pedlarArrives();
 };
 
 var noSpeakVillager = function() {
+    A("You say nothing");
+    Wait(1000);
     N("She was so frightened and resigned to her fate that should could not say a word.");
     N("So the villagers continued on their way, unaware of what was in store for the poor woman.");
     N("Had they known perhaps the could have helped.");
@@ -66,6 +72,8 @@ var pedlarArrives = function() {
 var takeNeedles = function() {
     //record inventory
     requiredItems.needles = 1;
+    A("You accept the needles");
+    Wait(1000);
     N("The woman accepted the gift.");
     N("And the pedlar picked up his baskets and the pole and went off again.");
     N("The woman, still frightened, continued to cry.");
@@ -75,6 +83,8 @@ var takeNeedles = function() {
 }
 
 var refuseNeedles = function() {
+    A("You refuse the needles");
+    Wait(1000);
     N("The woman could not think of how the needles would ever stop something as terrible as the Nung Gwama and refused the gift.");
     N("And the pedlar picked up his baskets and the pole and went off again.");
     queue(scene3,0);
