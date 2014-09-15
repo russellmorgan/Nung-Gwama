@@ -1,4 +1,4 @@
-//Manure pedlar
+//Manure peddler
 
 var scene3 = function() {
     queue(fadeScene,0);

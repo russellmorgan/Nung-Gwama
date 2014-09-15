@@ -13,7 +13,7 @@ function Start(){
 	Choose({
 		"Visit parents": startStory,
 		"Stay home": noStory,
-        "":scene9
+        "jump to end":scene9
 	});
 
 }
@@ -46,13 +46,16 @@ function startStory() {
 var wonGame = function() {
     queue(fadeScene,0);
     Wait(2000);
+    N("And so, instead of being eaten by a terrible monster, the woman found herself safe and sound.");
+    N("And there was a rich reward for the skin and bones of the Nung Gwama, which had been a danger to the whole countryside.");
+    N("So at last the poor woman had enough money to live happily ever after, and to take good care of her parents, too.");
+    Wait(2000);
     N("Thank you for playing.");
     N("The End.");
 
     Choose({
         "See the Credits":showCredits,
-        "Share this experience":socialShare,
-        "Replay":newGame
+        "Play again":newGame
     })
 };
 
@@ -63,8 +66,9 @@ var showCredits = function() {
     N("For Harry, dad loves you.");
     N("Code by Russell Morgan, Subreference Studios");
     N("Technical thanks go out to Nicky Case and his Coming Out Simulator on which this code is based.");
+    N("Based on a retelling by Leslie Bonnet")
     Choose({
-        "Replay":newGame
+        "Play again":newGame
     })
 };
 
@@ -72,11 +76,12 @@ var showCredits = function() {
 var gameFail = function() {
     //player tried to run away
     if(deathType === "ran") {
-        N("Despite his floppy feet the Nun Gwama is very fast.");
+        N("Despite his floppy feet the Nung Gwama is very fast.");
     }
+    N("You failed to outsmart the Nung Gwama.")
     N("The End.");
 
     Choose({
-        "Try the story again":newGame
+        "Play again":newGame
     })
 };

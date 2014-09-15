@@ -38,7 +38,7 @@ var speakVillager2 = function() {
      A("You speak to another villager close by");
      Wait(1000);
      N("The villager agreed that she would certainly be eaten by the Nung Gwama.");
-     pedlarArrives();
+     peddlerArrives();
 };
 
 var noSpeakVillager = function() {
@@ -54,10 +54,10 @@ var noSpeakVillager = function() {
     queue(gameFail,0);
 };
 
-var pedlarArrives = function() {
-    N("While the woman was talking, a pedlar stopped to ask why the poor woman was weeping.");
+var peddlerArrives = function() {
+    N("While the woman was talking, a peddler stopped to ask why the poor woman was weeping.");
     N("The villagers told him about the Nung Gwama's threat.");
-    N("The pedlar set down the bamboo baskets which hung from his carrying pole.");
+    N("The peddler set down the bamboo baskets which hung from his carrying pole.");
     N("He thought for a moment.");
     p("&#8220;Here, I'll give you these sharp needles.&#8221;");
     p("&#8220;Stick them in the door of your house, near the latch.&#8221;");
@@ -75,7 +75,7 @@ var takeNeedles = function() {
     A("You accept the needles");
     Wait(1000);
     N("The woman accepted the gift.");
-    N("And the pedlar picked up his baskets and the pole and went off again.");
+    N("And the peddler picked up his baskets and the pole and went off again.");
     N("The woman, still frightened, continued to cry.");
     N("For how could a few needles save her from the Nung Gwama?");
     Wait(2000);
@@ -86,6 +86,6 @@ var refuseNeedles = function() {
     A("You refuse the needles");
     Wait(1000);
     N("The woman could not think of how the needles would ever stop something as terrible as the Nung Gwama and refused the gift.");
-    N("And the pedlar picked up his baskets and the pole and went off again.");
+    N("And the peddler picked up his baskets and the pole and went off again.");
     queue(scene3,0);
 };

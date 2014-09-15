@@ -23,7 +23,7 @@ var refuseStone = function() {
     Wait(1000);
     N("The woman could not see how she would get the heavy stone home.");
     w("Thank you but I could not possibly carry something so heavy.");
-    N("The millstone pedlar wished her luck and continued on his way.");
+    N("The millstone peddler wished her luck and continued on his way.");
     Wait(2000);
     queue(scene8,0);
 };

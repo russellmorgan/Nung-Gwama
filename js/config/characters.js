@@ -10,7 +10,7 @@ w = new Character({ align:"left conversation", background:"rgb(255,230,255)", so
 // Gwama
 g = new Character({ align:"right conversation gwama", background:"#333", color:"#fff", sound:"text_low" });
 
-//pedlars
+//peddlers
 p = new Character({ align:"right conversation", background:"rgb(200,220,255)", color:"#000", sound:"text_low" });
 
 //watchman
