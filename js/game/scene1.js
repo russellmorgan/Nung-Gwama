@@ -60,7 +60,6 @@ var gwamaRequest = function() {
     g("All right then. This very night I will come to your house and tear you to pieces with my claws and crunch you up with my sharp teeth and <em>eat</em> you");
     N("At this, the woman hung her head in despair.");
     fadeScene();
-    queue(ClearDialogue,500);
     Clear();
     meetVillagers();
 };
