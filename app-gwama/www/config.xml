@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.subreference.com" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Nung Gwama</name>
+    <description>
+       The Terrible Nung Gwama is an interactive retelling of the Chinese tale in which a poor young woman tries to outwit a terrible monster before he eats her.
+    </description>
+    <author email="russell.morgan@subreference.com" href="http://www.subreference.com">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    
+    
+    <preference name="Orientation"                value="portrait" />        
+    <preference name="target-device"              value="universal" />      
+    <preference name="Fullscreen"                 value="true" />           
+    <preference name="webviewbounce"              value="false" />           
+    <preference name="prerendered-icon"           value="true" />    
+    <preference name="android-installLocation"    value="auto" />  
+    <preference name="DisallowOverscroll" value="true"/>  
+    
+
+    
+    <!-- Define app icon for each platform. -->
+    <icon src="res/icon/android/icon-192-xhdpi.png" />
+    
+    <!-- Android Icons -->
+    <platform name="android">
+    	<icon src="res/icon/android/icon-72-hdpi.png"   density="hdpi" />
+    	<icon src="res/icon/android/icon-96-xhdpi.png"  density="xhdpi" />
+    	<icon src="res/icon/android/icon-144-xhdpi.png"  density="xxhdpi" />
+    	<icon src="res/icon/android/icon-192-xhdpi.png"  density="xxxhdpi" />
+    </platform>
+         
+</widget>

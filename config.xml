@@ -6,10 +6,10 @@
         id        = "com.subreference.gwama"
         version   = "1.0.0">
 
-    <name>The Terrible Nung Gwama</name>
+    <name>Nung Gwama</name>
 
     <description>
-        An interactive retelling of the Chinese tale in which a poor young woman tries to outwit a terrible monster, Nung Gwama, before he eats her.
+        The Terrible Nung Gwama is an interactive retelling of the Chinese tale in which a poor young woman tries to outwit a terrible monster before he eats her.
     </description>
 
     <author href="http://subreference.com" email="russell.morgan@subreference.com">
@@ -46,14 +46,14 @@
     <icon src="img/android/icon-192-xhdpi.png" />
     <!--<icon src="img/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />-->
     <!--<icon src="img/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />-->
-    <icon src="img/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
-    <icon src="img/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
-    <icon src="img/android/icon-144-xhdpi.png"  gap:platform="android"    gap:qualifier="xxhdpi" />
-    <icon src="img/android/icon-192-xhdpi.png"  gap:platform="android"    gap:qualifier="xxxhdpi" />
-    <icon src="im/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
-    <icon src="im/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
-    <icon src="im/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
-    <icon src="im/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="img/icons/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="img/icons/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <icon src="img/icons/icon-144-xhdpi.png"  gap:platform="android"    gap:qualifier="xxhdpi" />
+    <icon src="img/icons/icon-192-xhdpi.png"  gap:platform="android"    gap:qualifier="xxxhdpi" />
+    <icon src="img/icons/icon-57.png"            gap:platform="ios"        width="57" height="57" />
+    <icon src="img/icons/icon-72-hdpi.png"            gap:platform="ios"        width="72" height="72" />
+    <icon src="img/icons/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="img/icons/icon-144-xhdpi.png"         gap:platform="ios"        width="144" height="144" />
 
 
     <!-- Define app splash screen for each platform. -->

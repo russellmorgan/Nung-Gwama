@@ -1,0 +1,4 @@
+jarsigner -verbose -keystore nung.keystore "/Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/bin/NungGwama-release-unsigned.apk" myKey
+
+
+/Users/russellmorgan/android-sdk-macosx/sdk/build-tools/20.0.0/zipalign -f -v 4 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/bin/NungGwama-release-unsigned.apk /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/bin/NungGwama-release-signed.apk

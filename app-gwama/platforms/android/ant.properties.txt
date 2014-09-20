@@ -1,0 +1,2 @@
+key.store=/Users/russellmorgan/Documents/nung-gwama.keystore
+key.alias=ng
