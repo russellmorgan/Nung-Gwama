@@ -36,6 +36,7 @@ body.cover {
 }
 body.cover .splash {
   padding: 6%;
+  margin-top: 20px;
 }
 body.cover h2 {
   text-align: left;
@@ -70,11 +71,12 @@ body.cover .actions {
 #game {
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 0;
   bottom: 0;
   left: 0;
   height: 100%;
+  overflow: hidden;
 }
 #social {
   position: absolute;

@@ -64,7 +64,7 @@ var runGwama = function() {
 var gwamaRequest = function() {
     N("The Nung Gwama said greedily.");
     g("&#8220;Give me those delectable cakes at once.&#8221;");
-    N("Now, even though the she was very frightened, the poor woman's duty to her parents came first.");
+    N("Even though the she was very frightened, the poor woman's duty to her parents came first.");
     w("&#8220;I can't do that, they are for my venerable parents.&#8221;");
     N("She sobbed heavily.");
     g("&#8220;All right then. This very night I will come to your house and tear you to pieces with my claws and crunch you up with my sharp teeth and eat you&#8221;");

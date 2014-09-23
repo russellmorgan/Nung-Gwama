@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.subreference.com" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.subreference.com" version="0.0.2" android-versionCode="2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Nung Gwama</name>
     <description>
        The Terrible Nung Gwama is an interactive retelling of the Chinese tale in which a poor young woman tries to outwit a terrible monster before he eats her.
     </description>
-    <author email="russell.morgan@subreference.com" href="http://subreference.com">
+    <author email="russell.morgan@subreference.com" href="http://www.subreference.com">
         Apache Cordova Team
     </author>
     <content src="index.html" />
@@ -22,14 +22,14 @@
 
     
     <!-- Define app icon for each platform. -->
-    <icon src="img/android/icon-192-xhdpi.png" />
+    <icon src="res/icon/android/icon-192-xhdpi.png" />
     
     <!-- Android Icons -->
     <platform name="android">
-    	<icon src="res/android/icon-72-hdpi.png"   density="hdpi" />
-    	<icon src="res/android/icon-96-xhdpi.png"  density="xhdpi" />
-    	<icon src="res/android/icon-144-xhdpi.png"  density="xxhdpi" />
-    	<icon src="res/android/icon-192-xhdpi.png"  density="xxxhdpi" />
+    	<icon src="res/icon/android/icon-72-hdpi.png"   density="hdpi" />
+    	<icon src="res/icon/android/icon-96-xhdpi.png"  density="xhdpi" />
+    	<icon src="res/icon/android/icon-144-xhdpi.png"  density="xxhdpi" />
+    	<icon src="res/icon/android/icon-192-xhdpi.png"  density="xxxhdpi" />
     </platform>
     
     <platform name="ios">
@@ -56,5 +56,6 @@
                   <!-- iPad Spotlight and Settings Icon -->
                   <icon src="res/ios/icon-50.png" width="50" height="50" />
                   <icon src="res/ios/icon-50@2x.png" width="100" height="100" />
-     </platform>             
+     </platform>  
+         
 </widget>

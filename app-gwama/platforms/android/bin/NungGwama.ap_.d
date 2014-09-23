@@ -12,7 +12,6 @@
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/bin/res/drawable-mdpi/icon.png \
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/bin/res/drawable-xhdpi/icon.png \
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www \
-/Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/config copy.xml \
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/config.xml \
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/cordova.js \
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/cordova_plugins.js \
@@ -89,6 +88,7 @@
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/res/icon/ios/icon-57.png \
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/res/icon/ios/icon-72-2x.png \
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/res/icon/ios/icon-72.png \
+/Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/res/icon/ios/icon-72@2x.png \
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/res/icon/tizen/icon-128.png \
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/res/icon/webos/icon-64.png \
 /Users/russellmorgan/Documents/Sites/NungGwama/app-gwama/platforms/android/assets/www/res/icon/windows-phone/icon-173-tile.png \
