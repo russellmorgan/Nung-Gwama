@@ -71,7 +71,7 @@ body.cover .actions {
 #game {
   width: 100%;
   position: absolute;
-  top: 50px;
+  top: 30px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -336,4 +336,19 @@ body.cover .actions {
 #game[screen=loading] > #loading,
 #game[screen=credits] > #credits {
   display: block;
+}
+/************** tablet portrait ****************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .splash {
+    width: 50%;
+  }
+  .cover .actions {
+    width: 80%;
+  }
+  #game #dialogue > div {
+    margin: 10px 45px 0 45px;
+  }
+  #game #dialogue > div.right {
+    margin-right: 45px;
+  }
 }
