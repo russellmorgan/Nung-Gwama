@@ -1,4 +1,17 @@
-<?xml version='1.0' encoding='utf-8'?>
+Useful Information For Submitting Bug Reports and Getting Help
+
+Current Node Version
+
+    v0.10.26
+
+
+Current Cordova CLI Version
+
+    3.1.0-0.2.0
+
+Current Config.xml
+
+    <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.subreference.gwama" version="1" android-versionCode="3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Nung Gwama</name>
     <description>
@@ -59,3 +72,76 @@
      </platform>  
          
 </widget>
+
+
+Currently Installed Platforms
+
+    
+
+    android
+
+    Available Android targets:
+----------
+id: 1 or "android-17"
+     Name: Android 4.2.2
+     Type: Platform
+     API level: 17
+     Revision: 2
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : no ABIs.
+----------
+id: 2 or "android-19"
+     Name: Android 4.4.2
+     Type: Platform
+     API level: 19
+     Revision: 3
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : default/armeabi-v7a
+----------
+id: 3 or "android-20"
+     Name: Android 4.4W
+     Type: Platform
+     API level: 20
+     Revision: 1
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in, AndroidWearRound, AndroidWearSquare, AndroidWearRound, AndroidWearSquare
+ Tag/ABIs : android-wear/armeabi-v7a, android-wear/x86
+----------
+id: 4 or "android-L"
+     Name: Android L (Preview)
+     Type: Platform
+     API level: L
+     Revision: 4
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : no ABIs.
+----------
+id: 5 or "Amazon.com:Amazon Fire TV SDK Addon:17"
+     Name: Amazon Fire TV SDK Addon
+     Type: Add-On
+     Vendor: Amazon.com
+     Revision: 1
+     Description: This is the Amazon Fire TV Addon. This addon includes 4 sample projects and 2 libraries. The sample project CupertinoStudio provides a template for communicating a user's subscription status and sign in status with Amazon for third parties. The SampleGame shows the number of dots on screen equivalent to the number of game contollers connected. The movement of the axis on the gamecontroller moves the dots on the screen. The notification.jar import gives access to Amazon's custom Notifications. The gamecontroller API gives access to the player number and game controller map that are needed by the Games.
+     Based on Android 4.2.2 (API level 17)
+     Libraries:
+      * com.amazon.device.gamecontroller (gamecontroller.jar)
+          Amazon Fire TV GameController API
+      * com.amazon.device.notification (notification.jar)
+          Amazon Fire TV Notification API
+     Skins: QVGA, HVGA, WXGA800-7in, WVGA854, WSVGA, WQVGA432, WXGA800, WXGA720, WVGA800 (default), WQVGA400
+ Tag/ABIs : no ABIs.
+
+
+
+
+
+    ios
+
+    Xcode 6.0.1
+Build version 6A317
+
+
+
+
+
+Currently Installed Plugins
+
+    No Plugins Currently Installed

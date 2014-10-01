@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="3" id="com.subreference.com" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="3" id="com.subreference.gwama" version="1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Hello Cordova</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -41,7 +41,7 @@
     <icon height="50" src="res/ios/icon-50.png" width="50" />
     <icon height="100" src="res/ios/icon-50@2x.png" width="100" />
     <author email="russell.morgan@subreference.com" href="http://www.subreference.com">
-        Apache Cordova Team
+        Subreference Studios llc
     </author>
     <content src="index.html" />
     <preference name="Orientation" value="portrait" />
