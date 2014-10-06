@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>The terrible Nung Gwama</name>
+    <name>Nung Gwama</name>
 
     <description>
         A game fiction based on a traditional Chinese folktale. 
@@ -21,5 +21,30 @@
     
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
+    
+    <icon src="icon.png" />
+    
+    <!-- iPhone / iPod Touch  -->
+    <icon src="icon-60.png" gap:platform="ios" width="60" height="60" />
+    <icon src="icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+    
+    <!-- iPad -->
+    <icon src="icon-76.png" gap:platform="ios" width="76" height="76" />
+    <icon src="icon-76@2x.png" gap:platform="ios" width="152" height="152" />
+    
+    <!-- SPLASH -->
+    
+    <!-- iPhone and iPod touch -->
+    <gap:splash src="Default@2x.png" gap:platform="ios" width="640" height="960" />
+    
+    <!-- iPhone 5 / iPod Touch (5th Generation) -->
+    <gap:splash src="splash/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+    
+    <!-- iPad -->
+    <gap:splash src="splah/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+    
+    <!-- Retina iPad -->
+    <gap:splash src="splash/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
+    
 
 </widget>

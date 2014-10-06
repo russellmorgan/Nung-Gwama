@@ -12,8 +12,7 @@ function Start(){
 
 	Choose({
 		"Visit parents": startStory,
-		"Stay home": noStory,
-        "jump to end":scene9
+		"Stay home": noStory
 	});
 
 }
